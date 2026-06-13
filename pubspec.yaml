@@ -1,0 +1,46 @@
+name: sms_gateway_app
+description: "SMS Gateway forwarding queued SMS from .NET backend via Android SIM"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Networking
+  dio: ^5.7.0
+
+  # Local storage
+  shared_preferences: ^2.3.0
+
+  # Runtime permissions (SEND_SMS, notifications, ...)
+  permission_handler: ^12.0.0
+
+  # State management
+  provider: ^6.1.2
+
+  # Utilities
+  uuid: ^4.5.0
+  intl: ^0.20.1
+  signalr_netcore: ^1.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  integration_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+  # Mocking for unit + widget tests
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
