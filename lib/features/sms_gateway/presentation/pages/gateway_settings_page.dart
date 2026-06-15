@@ -237,8 +237,8 @@ class _GatewaySettingsPageState extends State<GatewaySettingsPage> {
                   const SizedBox(width: 6),
                   Expanded(
                     child: Text(
-                      'When backend runs on this Mac, use the LAN IP '
-                      '(e.g. http://192.168.x.x:5001) — not localhost.',
+                      'Connect to ApiGateway (not SmsService directly). '
+                      'On LAN: http://192.168.x.x:5003 or https://192.168.x.x:5001.',
                       style: theme.textTheme.bodySmall?.copyWith(
                         color:
                             theme.colorScheme.onSurface.withValues(alpha: 0.55),
